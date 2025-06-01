@@ -49,12 +49,12 @@ async def done(update: Update, context: ContextTypes.DEFAULT_TYPE):
 
 # Run the bot
 async def main():
-    import os
+    # import os
 
-    TOKEN = os.getenv("BOT_TOKEN")
-    app = ApplicationBuilder().token(TOKEN).build()
+    # TOKEN = os.getenv("BOT_TOKEN")
+    # app = ApplicationBuilder().token(TOKEN).build()
 
-    # app = ApplicationBuilder().token("7876341862:AAGjBpWcR_tjqkwVj2q0KE6unpC37VCdgeo").build()
+    app = ApplicationBuilder().token("7876341862:AAGjBpWcR_tjqkwVj2q0KE6unpC37VCdgeo").build()
 
     app.add_handler(CommandHandler("start", start))
     app.add_handler(CommandHandler("add", add))
